@@ -1,21 +1,14 @@
-import React from 'react'
-import { Link } from 'react-router'
+import Setting from "./pages/Setting";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <h1>simran</h1>
-<Link to="/login">
-      <button>
-        Click to navigate Login page
-      </button>
-</Link>
-
-
-
-
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/Settings" element={<Setting />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

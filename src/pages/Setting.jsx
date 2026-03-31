@@ -1,9 +1,11 @@
-import React from "react"
-import "./settings.css";
+import React from 'react'
+import "./Setting.css";
 
-function Settings() {
-    return (
-        <div className="settings-container">
+const Setting = () => {
+  return (
+    <div className="Setting-wrapper">
+
+    <div className="Setting-container">
             <h1>Settings</h1>
             <p className="subtitle">Configure your workspace preferences</p>
 
@@ -29,9 +31,11 @@ function Settings() {
                     <span>Pay Cycle</span>
                     <span>Monthly</span>
                 </div>
+                </div>
             </div>
         </div>
   );
 }
 
 export default Setting
+
